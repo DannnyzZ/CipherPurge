@@ -11,20 +11,20 @@ Modern data sanitization software in compliance with NIST SP 800-88 Guidelines
 </p>
  
 <p align="center">
-  <img src="https://img.shields.io/badge/PowerShell-5391FE.svg?style&logo=PowerShell&logoColor=white" alt="PowerShell" />
-  <img src="https://img.shields.io/badge/Batch-Script-4EAA25.svg?style=flat&logo=Windows%20Terminal&logoColor=white" alt="Batch Script" />
-  <img src="https://img.shields.io/badge/OpenAI-412991.svg?style&logo=OpenAI&logoColor=white" alt="OpenAI" />
-  <img src="https://img.shields.io/badge/Python-3776AB.svg?style&logo=Python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/GitHub-007ACC.svg?style=flat&logo=GitHub&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/OS%20Hardening-FFA500.svg" alt="OS%20Hardening" />
-  <img src="https://img.shields.io/badge/Markdown-000000.svg?style&logo=Markdown&logoColor=white" alt="Markdown" />
-  <img src="https://img.shields.io/badge/JSON-000000.svg?style&logo=JSON&logoColor=white" alt="JSON" />
+  <img src="https://img.shields.io/badge/Data%20Wiping-FF5733.svg?style=for-the-badge&logo=Security&logoColor=white" alt="Data Wiping" />
+  <img src="https://img.shields.io/badge/Encryption%20AES256-33FF57.svg?style=for-the-badge&logo=Cryptography&logoColor=white" alt="Encryption AES256" />
+  <img src="https://img.shields.io/badge/Data%20Zeroing-3366FF.svg?style=for-the-badge&logo=Security&logoColor=white" alt="Data Zeroing" />
+  <img src="https://img.shields.io/badge/Data%20Overwriting-FF33A6.svg?style=for-the-badge&logo=Security&logoColor=white" alt="Data Overwriting" />
+  <img src="https://img.shields.io/badge/Python-FFD700.svg?style=for-the-badge&logo=Python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Tkinter%20GUI-66CCFF.svg?style=for-the-badge&logo=Python&logoColor=white" alt="Tkinter GUI" />
 </p>
 
 
+
+
 ![GitHub license](https://img.shields.io/github/license/eli64s/readme-ai?style&color=5D6D7E)
-![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-4429-25A9E0.svg?style=flat)
-![Code Size](https://img.shields.io/badge/Code%20Size-185%20KB-25A9E0.svg?style=flat)
+![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-328-25A9E0.svg?style=flat)
+![Code Size](https://img.shields.io/badge/Code%20Size-15%20KB-25A9E0.svg?style=flat)
 </div>
 
 ---
@@ -51,11 +51,7 @@ Modern data sanitization software in compliance with NIST SP 800-88 Guidelines
 
 ## 📍 Overview
 
-OSFortify is a sophisticated terminal-based utility designed to enhance system security, streamline operating system hardening, and facilitate efficient system administration. With a focus on cybersecurity, system integrity, and user-friendly interactions, OSFortify empowers users to manage various aspects of their system's services, features, and ports through a secure and organized interface.
-
-The primary **purpose** of OSFortify is to provide an advanced yet accessible tool for users to bolster their system's security posture, elevate operating system hardening, and seamlessly administer critical system functions. By enabling users to interact with their system through a curated selection of options, OSFortify bridges the gap between cybersecurity and user experience.
-
-OSFortify brings robust control to your system's **services, features, and ports**. It allows real-time status checks, seamless activation or deactivation during boot, and dynamic adjustments on-the-fly. With OSFortify, you can finely manage your system's components, optimize resources, and bolster security.
+CipherPurge stands as a commanding solution for those seeking robust data protection mechanisms. Merging advanced data wiping, data zeroing, data over AES-256 encryption, data zeroing, and data overwriting capabilities, CipherPurge introduces a powerful and intuitive Tkinter GUI interface for effortless data security management.
 
 
 ---
@@ -184,15 +180,17 @@ OSFortify encompasses an extensive list of important ports, such as SSH (Port 22
 
 Before you begin, ensure that you have the following prerequisites installed:
 
->  ` Windows 8/10/11`
+>  ` Windows 7/8/10/11`
 
 >  ` Python`
 
 >  ` Python Package Installer `
 
->  ` Python library: curses `
-
 >  ` Python library: tkinter `
+
+>  ` Python library: cryptography `
+
+>  ` Python library: sent2trash `
 
 >  ` Internet connection `
 
@@ -242,30 +240,29 @@ python C:\Users\Danny\Desktop\osfortify.py
 ### ⚠️ Warning
 
 
-**Using OSFortify Safely:**
+**Using CipherPurge safely:**
 
-1. Knowledge is Key: Understand changes' impact on security and stability.
+1. Data Irreversibility: Understand that CipherPurge permanently deletes and overwrites files. Once an operation is performed, it cannot be undone. Make sure you have backups or are absolutely certain about the files you select for processing.
 
-2. Caution and Expertise: Modify with care, avoid vulnerabilities or data loss.
+2. Data Loss: CipherPurge sanitizes files by clearing their content, randomizing data, zeroing it out, encrypting it, and moving it to the trash. This may result in complete data loss. Do not use this tool on files you intend to keep.
 
-3. Backup Always: Prioritize system backups to ensure recovery options.
+3. Use with Caution: CipherPurge is designed for secure data destruction and not for general file management. Use it responsibly and only on files you explicitly intend to delete.
 
-4. Authorized Access: Limit OSFortify access to knowledgeable personnel.
+4. Backup Important Data: Before using CipherPurge, back up any important or valuable data to ensure it is not accidentally deleted or overwritten.
 
-5. Controlled Testing: Experiment in safe environments before implementing changes.
+5. Contact Developer: If you have any doubts or need assistance, contact the developer for guidance.
 
-6. Secure Scripts: Verify PowerShell scripts before execution.
+**Use CipherPurge wisely to enhance data security while minimizing risks.**
 
-**Use OSFortify wisely to enhance security while minimizing risks.**
 
 ## 🗺 Roadmap
 
 > - [X] ` Task 1: Multiple bug fixes`
-> - [X] ` Task 2: New features: tidy and colored output`
+> - [X] ` Task 2: Support for new extensions of files.`
 
-> - [ ] ` Incoming feature 1: Exporting results to PDF file`
-> - [ ] ` Incoming feature 2: New services: HDMI, Mini-Jack, DVI, CD-DVD, CTRL+ALT+DEL on login prompt, Trivial File Transfer Protocol`
-> - [ ] ` Incoming feature 3: One button evaluation of security state (Risk analysis)`
+> - [ ] ` Incoming feature 1: New feature: sanitization of whole drives (internal or external memory)`
+> - [ ] ` Incoming feature 2: New feature: drag and drop`
+> - [ ] ` Incoming feature 3: Support for more file extensions.`
 
 
 ---

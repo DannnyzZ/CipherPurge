@@ -1,5 +1,3 @@
-# CipherPurge
-Modern data sanitization software in compliance with NIST SP 800-88 Guidelines
 
 
 <div align="center">
@@ -11,13 +9,16 @@ Modern data sanitization software in compliance with NIST SP 800-88 Guidelines
 </p>
  
 <p align="center">
-  <img src="https://img.shields.io/badge/Data%20Wiping-FF5733.svg?style=for-the-badge&logo=Security&logoColor=white" alt="Data Wiping" />
+  <img src="https://img.shields.io/badge/Data%20Wiping-800080.svg?style=for-the-badge&logo=Security&logoColor=white" alt="Data Wiping" />
+  <img src="https://img.shields.io/badge/Defense%20in%20Depth-FF5733.svg?style=for-the-badge&logo=Security&logoColor=white" alt="Defense in Depth" />
   <img src="https://img.shields.io/badge/Encryption%20AES256-33FF57.svg?style=for-the-badge&logo=Cryptography&logoColor=white" alt="Encryption AES256" />
   <img src="https://img.shields.io/badge/Data%20Zeroing-3366FF.svg?style=for-the-badge&logo=Security&logoColor=white" alt="Data Zeroing" />
   <img src="https://img.shields.io/badge/Data%20Overwriting-FF33A6.svg?style=for-the-badge&logo=Security&logoColor=white" alt="Data Overwriting" />
-  <img src="https://img.shields.io/badge/Python-FFD700.svg?style=for-the-badge&logo=Python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Tkinter%20GUI-66CCFF.svg?style=for-the-badge&logo=Python&logoColor=white" alt="Tkinter GUI" />
+  <img src="https://img.shields.io/badge/Python-FFD700.svg?style=for-the-badge&logo=Python&logoColor=black" alt="Python" />
+  <img src="https://img.shields.io/badge/Tkinter%20GUI-66CCFF.svg?style=for-the-badge&logo=Python&logoColor=black" alt="Tkinter GUI" />
 </p>
+
+
 
 
 ![GitHub license](https://img.shields.io/github/license/eli64s/readme-ai?style&color=5D6D7E)
@@ -60,6 +61,8 @@ In today's landscape of ever-evolving cyber threats and data breaches, ensuring 
 - **Encrypt Securely:** Employing the AES-256 encryption standard, CipherPurge transforms your files into an unreadable format, adding an additional layer of security to your data.
 
 - **Dispose Safely:** CipherPurge securely disposes of your encrypted files by moving them to the system and user trash. With the option to empty both trash locations, you can be certain that your sensitive files are beyond recovery.
+
+CipherPurge incorporates the principles of **"Defense in Depth**," a cybersecurity strategy that emphasizes multiple layers of protection. This approach ensures that even if one layer is compromised, others remain intact to thwart potential threats. 
 
 By offering military-grade encryption, data randomization, and secure file disposal in a user-friendly interface, CipherPurge empowers individuals and organizations to take control of their data security. 
 

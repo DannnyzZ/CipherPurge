@@ -139,6 +139,7 @@ By offering military-grade encryption, data randomization, and secure file dispo
 |                             | .vmdk - VMware Virtual Disk                        |
 | **Database Backup**         | .bak - Database Backup File (commonly associated with SQL databases) |
 
+This list represents only part of supported formats and extensions. Software doesn't support erasing folders.
 
 ---
 
@@ -236,6 +237,7 @@ python C:\Users\Danny\Desktop\osfortify.py
 > - [ ] ` Incoming feature 1: New feature: sanitization of whole drives (internal or external memory)`
 > - [ ] ` Incoming feature 2: New feature: drag and drop`
 > - [ ] ` Incoming feature 3: Support for more file extensions.`
+> - [ ] ` Incoming feature 4: Support for whole folders not only choosen objects.`
 
 
 ---

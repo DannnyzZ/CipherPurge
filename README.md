@@ -238,6 +238,7 @@ python C:\Users\Danny\Desktop\osfortify.py
 > - [ ] ` Incoming feature 2: New feature: drag and drop`
 > - [ ] ` Incoming feature 3: Support for more file extensions.`
 > - [ ] ` Incoming feature 4: Support for whole folders not only choosen objects.`
+> - [ ] ` Incoming improvement: Better, more user friendly GUI.`
 
 
 ---

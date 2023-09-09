@@ -20,8 +20,6 @@ Modern data sanitization software in compliance with NIST SP 800-88 Guidelines
 </p>
 
 
-
-
 ![GitHub license](https://img.shields.io/github/license/eli64s/readme-ai?style&color=5D6D7E)
 ![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-328-25A9E0.svg?style=flat)
 ![Code Size](https://img.shields.io/badge/Code%20Size-15%20KB-25A9E0.svg?style=flat)
@@ -34,11 +32,11 @@ Modern data sanitization software in compliance with NIST SP 800-88 Guidelines
 - [📒 Table of Contents](#-table-of-contents)
 - [📍 Overview](#-overview)
 - [⚙️ Features](#️-features)
-- [🧩 Modules](#-modules)
+- [🧩 Supported formats](#-supported-formats)
 - [🚀 Getting Started](#-getting-started)
   - [✔️ Prerequisites](#️-prerequisites)
   - [💻 Installation](#-installation)
-  - [🎮 Using OSFortify](#-using-OSFortify)
+  - [🎮 Using CipherPurge](#-using-CipherPurge)
   - [⚠️ Warning](#-warning)
 - [🗺 Roadmap](#-roadmap)
 - [🤝 Contributing](#-contributing)
@@ -53,20 +51,35 @@ Modern data sanitization software in compliance with NIST SP 800-88 Guidelines
 
 CipherPurge stands as a commanding solution for those seeking robust data protection mechanisms. Merging advanced data wiping, data zeroing, data over AES-256 encryption, data zeroing, and data overwriting capabilities, CipherPurge introduces a powerful and intuitive Tkinter GUI interface for effortless data security management.
 
+**CipherPurge v1.0** was created with a singular, paramount purpose: to enhance data security and protect your sensitive information in an increasingly digital and interconnected world.
+
+In today's landscape of ever-evolving cyber threats and data breaches, ensuring the confidentiality and integrity of your digital assets is of utmost importance. Whether you're an individual seeking to safeguard personal documents or a business striving to protect proprietary information, CipherPurge offers a comprehensive solution. The software's sole purpose is to provide you with a powerful and accessible tool to:
+
+- **Sanitize Data:** CipherPurge ensures that your data is thoroughly sanitized before encryption. By randomizing and zeroing out its contents, it guarantees that no trace of your original data remains.
+
+- **Encrypt Securely:** Employing the AES-256 encryption standard, CipherPurge transforms your files into an unreadable format, adding an additional layer of security to your data.
+
+- **Dispose Safely:** CipherPurge securely disposes of your encrypted files by moving them to the system and user trash. With the option to empty both trash locations, you can be certain that your sensitive files are beyond recovery.
+
+By offering military-grade encryption, data randomization, and secure file disposal in a user-friendly interface, CipherPurge empowers individuals and organizations to take control of their data security. 
+
 
 ---
 
 ## ⚙️ Features
 
-| Feature                | Description                                                                                                                                                    |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **⚡️ Efficient Admininistration** | The program streamlines system administration by offering a user-friendly interface to manage services and features. This enhances operational efficiency by minimizing manual command-line interactions and simplifying routine tasks. |
-| **🧩 Modularity** | The program's design demonstrates modularity by organizing functionalities into distinct modules and classes. Each module focuses on specific aspects of system security, administration, and hardening, enhancing maintainability and reusability. |
-| **✔️ Secure Execution** | OSFortify emphasizes secure execution of commands and scripts, crucial for system integrity and cybersecurity. It ensures proper progress tracking during script execution and safeguards against unauthorized access. |
-| **🔐 Enhanced Security** | OSFortify contributes to enhanced security by enabling users to selectively manage services, features, and ports. This granular control aids in system hardening, mitigating potential vulnerabilities, and bolstering overall cybersecurity measures. |
-| **🔌 Flexibility** | The program's dynamic configuration switching and adaptable options provide flexibility to tailor system settings to specific needs. This accommodates various security profiles and allows users to optimize their systems for different scenarios. |
-| **📶 Insightful Data** | OSFortify offers users valuable insights into their system's architecture through detailed system information retrieval. This aids decision-making, system understanding, and helps identify potential areas for further optimization. |
-| **🔗 Comprehensive Functionality** | OSFortify encompasses a diverse array of essential services, features, and ports, collectively enhancing system security, hardening, and administration. These elements form a critical foundation for a robust and secure computing environment, fortifying against potential threats and vulnerabilities. |
+| Feature                                   | Description                                                                                                                                                                                                                                              |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **⚙️ Data Encryption with AES-256**       | CipherPurge implements AES-256 encryption to ensure robust data security. The Advanced Encryption Standard with a 256-bit key provides high-level data confidentiality. It uses the `cryptography` library to perform AES encryption in Cipher Feedback (CFB) mode.    |
+| **🔐 Secure File Overwriting**            | Enhancing data protection, the program securely overwrites files using a two-step process: randomization and zeroing. Random data is generated to match the original file's size, and zeroing ensures complete data erasure, preventing data recovery attempts.        |
+| **📝 Action Logging**                    | CipherPurge maintains a detailed action log that records timestamped entries. This audit trail provides a comprehensive history of operations, aiding in accountability and troubleshooting. The log file is created in a "Logs" folder within the program directory.      |
+| **🔄 Multithreaded Processing**           | To maintain a responsive user interface during time-consuming tasks, the program employs multithreading. Background operations, such as emptying the trash, run in separate threads, ensuring a smooth user experience while efficiently executing tasks.           |
+| **📂 File Selection and Management**      | Users can select multiple files through a file dialog, and the program efficiently manages these selections in a Python list. Selected files are displayed in a user-friendly list, including file names, sizes, and extensions for easy reference and management.    |
+| **🎨 UI Customization**                   | CipherPurge offers interface customization options, allowing users to define background and button colors, as well as font styles. This customization enhances visual appeal and tailors the program's appearance to individual preferences.                  |
+| **❗ Error Handling and Reporting**        | Robust error-handling mechanisms catch and report exceptions during file operations. User-friendly error messages provide clear guidance in case of unexpected issues, ensuring a seamless and user-friendly experience.                                       |
+| **🖼️ Resizable User Interface**          | Users can resize the application window, adapting it to different screen resolutions and preferences. This feature enhances user comfort and usability, accommodating various display configurations and environments.                                        |
+| **📁 File Format Versatility**           | Designed to accommodate diverse file formats, CipherPurge is versatile and suitable for processing various data types, including text, binary, documents, and images. This flexibility ensures compatibility with a wide range of file formats.                  |
+
 - *Services and Features*
 OSFortify encompasses a comprehensive range of essential services and features, including guest user account management, FTP control, oversight of Windows Media Player, and management of USB ports. These functionalities contribute significantly to system security by offering control over potential entry points, data transfers, and media-related threats.
 - *Windows Features*
@@ -76,96 +89,62 @@ OSFortify encompasses an extensive list of important ports, such as SSH (Port 22
 
 ---
 
-## 🧩 Modules
+## 🧩 Supported formats
 
-<details closed><summary>Services</summary>
 
-| Service                                                                   | Details                                                                                                                                                                                                            |
-| ---                                                                    | ---                                                                                                                                                                                                                |
-| Windows Defender | Protocol: N/A. Function: Antivirus and antimalware tool. Use: System protection. Security: Reliable; ensure regular updates for best protection. |
-| Windows Firewall | Protocol: N/A. Function: Filters incoming/outgoing network traffic. Use: Network security. Security: Essential for system protection; configure rules appropriately. |
-| Windows Update | Protocol: N/A. Function: Provides system and software updates. Use: System maintenance. Security: Critical for patching vulnerabilities; keep automatic updates on. |
-| Windows Remote Registry | Protocol: N/A. Function: Access to system registry remotely. Use: System administration. Security: Risky; disable unless specifically needed. |
-| Windows Remote Management | Protocol: TCP. Function: Remote administration tool. Use: System administration. Security: Secure endpoints; restrict access. |
-| Windows Management Instrumentation (WMI) | Protocol: N/A. Function: Management infrastructure for Windows. Use: System monitoring and management. Security: Potential target; ensure proper configuration. |
-| Remote Desktop Protocol (RDP) | Protocol: TCP/UDP. Function: Remote desktop access. Use: Remote system management. Security: High-risk; enable Network Level Authentication and restrict access. |
-| Windows Error Reporting | Protocol: N/A. Function: Sends error reports to Microsoft. Use: Debugging. Security: Minor risk; sensitive info might be sent. |
-| Windows Remote Assistance | Protocol: N/A. Function: Remote system help and support. Use: Tech support. Security: Secure sessions; only use with trusted parties. |
-| Windows Fax and Scan | Protocol: N/A. Function: Send/receive faxes; scan documents. Use: Office tasks. Security: Ensure secure configurations for fax transmissions. |
-| Internet Printing Client | Protocol: N/A. Function: Allows printing over the internet. Use: Remote printing. Security: Ensure secure network and printer configurations. |
-| Universal Plug and Play (UPnP) | Protocol: N/A. Function: Automatic device discovery and configuration. Use: Device connectivity. Security: Known vulnerabilities; disable unless needed. |
-| Bluetooth | Protocol: N/A. Function: Short-range wireless communication. Use: Device pairing. Security: Vulnerable to "bluejacking"; turn off when not in use. |
-| Windows Search | Protocol: N/A. Function: Search tool for files and apps. Use: File and application access. Security: Ensure indexing of sensitive data is restricted. |
-| Print Spooler | Protocol: N/A. Function: Manages print tasks. Use: Printing tasks. Security: Known vulnerabilities; update regularly and restrict access. |
-| Microsoft IIS | Protocol: TCP. Function: Web server software. Use: Hosting web applications. Security: Regularly update and harden configurations. |
-| NetBIOS | Protocol: TCP/UDP. Function: Legacy network support. Use: Windows networking. Security: Known vulnerabilities; restrict or disable. |
-| Link-Local Multicast Name Resolution (LLMNR) | Protocol: N/A. Function: Resolves single-label domains. Use: Network operations. Security: Vulnerable to spoofing; consider disabling. |
-| Server Message Block Version 1 (SMB1) | Protocol: TCP/UDP. Function: File sharing protocol. Use: Network file sharing. Security: Deprecated due to vulnerabilities; disable. |
-| Server Message Block Version 2 (SMB2) | Protocol: TCP/UDP. Function: Updated file sharing protocol. Use: Network file sharing. Security: More secure than SMB1; ensure up-to-date configurations. |
-| Telnet | Protocol: TCP. Function: Remote command-line access. Use: Remote system administration. Security: Unencrypted; use SSH as a more secure alternative. |
+| File Type                   | File Extensions                                      |
+|-----------------------------|------------------------------------------------------|
+| **Documents**               | .docx - Microsoft Word Document                      |
+|                             | .xlsx - Microsoft Excel Spreadsheet                  |
+|                             | .pptx - Microsoft PowerPoint Presentation            |
+|                             | .pdf - Adobe Portable Document Format                |
+|                             | .txt - Text Document                                  |
+|                             | .rtf - Rich Text Format                              |
+| **Images**                  | .jpg / .jpeg - JPEG Image                            |
+|                             | .png - Portable Network Graphics                     |
+|                             | .gif - Graphics Interchange Format                   |
+|                             | .bmp - Bitmap Image                                  |
+|                             | .tiff - Tagged Image File Format                     |
+|                             | .eps - Encapsulated PostScript                       |
+| **Archives**                | .zip - ZIP Archive                                   |
+|                             | .rar - RAR Archive                                   |
+|                             | .7z - 7-Zip Archive                                 |
+|                             | .tar - Tape Archive                                  |
+|                             | .gz / .gzip - GZIP Compressed Archive                |
+| **Spreadsheets and Databases** | .csv - Comma-Separated Values                    |
+|                             | .db / .sqlite - Database File                       |
+|                             | .xls - Microsoft Excel 97-2003 Workbook            |
+|                             | .accdb - Microsoft Access Database                  |
+| **Emails**                  | .eml - Email Message                                 |
+|                             | .pst - Microsoft Outlook Personal Storage Table     |
+| **Presentations**           | .ppt - Microsoft PowerPoint Presentation (Legacy)    |
+|                             | .key - Apple Keynote Presentation                    |
+| **Web-Related**             | .html / .htm - HTML Web Page                         |
+|                             | .xml - Extensible Markup Language                    |
+|                             | .json - JavaScript Object Notation                   |
+|                             | .php - PHP Script                                   |
+|                             | .asp - Active Server Pages                          |
+| **Compressed Data**         | .tar.gz / .tgz - Tar GZIP Compressed Archive         |
+|                             | .bz2 - BZIP2 Compressed Archive                      |
+| **Source Code and Scripts** | .py - Python Script                                 |
+|                             | .java - Java Source Code                            |
+|                             | .c / .cpp - C/C++ Source Code                       |
+|                             | .js - JavaScript Code                               |
+|                             | .sh - Shell Script                                  |
+| **Audio and Video**         | .mp3 - MP3 Audio File                               |
+|                             | .mp4 - MP4 Video File                               |
+|                             | .avi - Audio Video Interleave                       |
+| **CAD and Design Files**    | .dwg - AutoCAD Drawing Database                     |
+|                             | .psd - Adobe Photoshop Document                     |
+| **Backup and Configuration** | .bak - Backup File                                  |
+|                             | .conf - Configuration File                          |
+| **Data Formats**            | .xml - Extensible Markup Language (XML) File        |
+|                             | .json - JavaScript Object Notation (JSON) File      |
+| **Virtualization and Disk Images** | .iso - Disk Image File (e.g., for OS installation) |
+|                             | .vhd - Virtual Hard Disk                            |
+|                             | .vmdk - VMware Virtual Disk                        |
+| **Database Backup**         | .bak - Database Backup File (commonly associated with SQL databases) |
 
-</details>
-
-<details closed><summary>Features</summary>
-
-| Feature                                                                     | Details                                                                                                                                                                                                                                               |
-| ---                                                                      | ---                                                                                                                                                                                                                                                   |
-| Guest user account | Protocol: N/A. Function: Provides limited access to a system without a personalized login. Use: Temporary or restricted access. Security: Risky; can be exploited if not properly restricted. |
-| File Transfer Protocol (FTP) | Protocol: TCP. Function: Protocol for transferring files over a network. Use: File sharing and download/upload. Security: Unencrypted; use FTPS or SFTP for secure transfers. |
-| Windows Media Player | Protocol: N/A. Function: Media player for viewing/hearing media files. Use: Multimedia playback. Security: Vulnerabilities may arise from codecs/plugins; ensure updates. |
-| USB ports | Protocol: N/A. Function: Interface for connecting external devices. Use: Data transfer, device charging, peripheral connections. Security: Potential for malicious device connections or data theft; use device controls. |
-
-</details>
-
-<details closed><summary>Ports</summary>
-
-| Port                                                                               | Details                                                                                                                                                                                                                                                                                                           |
-| ---                                                                                | ---                                                                                                                                                                                                                                                                                                                     |
-| Port 7 - Echo | *Protocol*: TCP/UDP. *Function*: Returns received data (echoes back). *Use*: Network testing. *Security*: Risky; often disabled or blocked due to potential exploits. |
-| Port 20 - File Transfer Protocol (FTP) | Protocol: TCP. Function: Transfers files (data channel). Use: File sharing. Security: Use with caution; encrypted alternatives recommended. |
-| Port 21 - File Transfer Protocol Control | Protocol: TCP. Function: Command channel for FTP. Use: File sharing control. Security: Use with caution; encrypted alternatives recommended. |
-| Port 22 - Secure Shell (SSH) | Protocol: TCP. Function: Secure remote login and command execution. Use: Secure system management. Security: Highly secure; ensure strong keys and passwords. |
-| Port 23 - Telnet | Protocol: TCP. Function: Remote login (plaintext). Use: Remote system management. Security: Risky; use SSH instead due to lack of encryption. |
-| Port 25 - Simple Mail Transfer Protocol (SMTP) | Protocol: TCP. Function: Email transmission. Use: Mail servers. Security: Vulnerable to spam and misuse; ensure proper configurations. |
-| Port 37 - Time | Protocol: TCP/UDP. Function: Provides system time. Use: Synchronizing system clocks. Security: Generally low risk; ensure only trusted sources are used. |
-| Port 53 - Domain Name System (DNS) | Protocol: TCP/UDP. Function: Translates domain names to IP addresses. Use: Web browsing, app connectivity. Security: Risk of DNS spoofing; use DNSSEC where possible. |
-| Port 69 - Trivial File Transfer Protocol (TFTP) | Protocol: UDP. Function: File transfers (simpler than FTP). Use: Often for network devices, firmware updates. Security: No authentication; use in secure environments only. |
-| Port 80 - Hyper Text Transfer Protocol (HTTP) | Protocol: TCP. Function: Transfers web pages. Use: Web browsing. Security: Unencrypted; HTTPS (Port 443) is more secure. |
-| Port 110 - Post Office Protocol 3 (POP3) | Protocol: TCP. Function: Retrieves email from a mail server. Use: Email clients. Security: Unencrypted; secure alternatives available (e.g., POP3S). |
-| Port 111 - Remote Procedure Calls (RPC) | Protocol: TCP/UDP. Function: Executes remote commands. Use: Distributed systems. Security: Vulnerable if not properly secured; risk of DDoS and unauthorized access. |
-| Port 123 - Network Time Protocol (NTP) | Protocol: UDP. Function: Synchronizes system clocks. Use: Clock synchronization. Security: Exploitable if misconfigured; use authenticated mode. |
-| Port 135 - Microsoft Remote Procedure Call (MSRPC) | Protocol: TCP. Function: Executes remote procedures. Use: Microsoft distributed applications. Security: Risky; should be firewalled in untrusted environments. |
-| Port 137 - Server Message Block (SMB) | Protocol: TCP/UDP. Function: Provides shared access to files, printers, etc. Use: File and printer sharing in Windows networks. Security: Vulnerable to various attacks; secure configurations and recent versions are essential. |
-| Port 139 - Server Message Block/NetBIOS Session Service (SMB/NetBIOS-SSN) | Protocol: TCP. Function: Facilitates file, printer, and other shared resource access. Use: Windows networking. Security: Risk of unauthorized access; should be firewalled in untrusted environments. |
-| Port 143 - Internet Message Access Protocol (IMAP) | Protocol: TCP. Function: Accesses email messages on a remote server. Use: Email clients. Security: Unencrypted; secure version IMAPS (Port 993) recommended. |
-| Port 161 - Simple Network Management Protocol (SNMP) | Protocol: UDP. Function: Monitors and manages network devices. Use: Network management. Security: Versions prior to SNMPv3 lack encryption and are insecure. |
-| Port 162 - Simple Network Management Protocol Trap (SNMP Trap) | Protocol: UDP. Function: Notification from network devices about specific conditions. Use: Network management. Security: Ensure filtering and proper configurations to avoid misuse. |
-| Port 389 - Lightweight Directory Access Protocol (LDAP) | Protocol: TCP. Function: Accesses and maintains directory services. Use: Directory operations. Security: Unencrypted; use LDAPS (Port 636) for secure connections. |
-| Port 443 - HTTP Secure (HTTPS) | Protocol: TCP. Function: Transfers encrypted web pages. Use: Secure web browsing. Security: Encrypted; ensure valid certificates for authenticity. |
-| Port 445 - Microsoft-DS (Directory Services) SMB/Active Directory | Protocol: TCP. Function: Access to shared resources like files and printers. Use: Windows networking and domain services. Security: Potential target for ransomware and other attacks; secure appropriately. |
-| Port 636 - Secure Lightweight Directory Access Protocol (SLDAP) | Protocol: TCP. Function: Accesses and maintains encrypted directory services. Use: Directory operations. Security: Encrypted; offers secure alternative to LDAP. |
-| Port 993 - Internet Message Access Protocol Secure (IMAPS) | Protocol: TCP. Function: Accesses email messages securely on a remote server. Use: Secure email clients. Security: Encrypted; preferred over IMAP. |
-| Port 995 - Post Office Protocol 3 Secure (POP3S) | Protocol: TCP. Function: Secure retrieval of email from a server. Use: Secure email clients. Security: Encrypted; preferred over POP3. |
-| Port 989 - FTP over TLS/SSL (FTPS data) | Protocol: TCP. Function: Encrypted data channel for FTP. Use: Secure file sharing. Security: Encrypted; safer than regular FTP. |
-| Port 990 - FTP over TLS/SSL (FTPS control) | Protocol: TCP. Function: Command channel for encrypted FTP. Use: Secure file sharing control. Security: Encrypted; safer than regular FTP. |
-| Port 1433 - Microsoft SQL Server | Protocol: TCP. Function: SQL Server database access. Use: Database operations. Security: Potential target for attacks; firewall and restrict access. |
-| Port 1434 - Microsoft SQL Server Browser Service | Protocol: UDP. Function: Provides info about SQL Server instances. Use: Database operations. Security: Limit exposure; can reveal sensitive info. |
-| Port 1723 - Point-to-Point Tunneling Protocol (PPTP) | Protocol: TCP. Function: VPN tunnel creation. Use: VPNs. Security: Vulnerabilities known; consider more secure VPN protocols. |
-| Port 1812 - RADIUS Authentication | Protocol: UDP. Function: Remote user authentication. Use: VPNs, networking. Security: Ensure secure configurations and strong encryption. |
-| Port 1813 - RADIUS Accounting | Protocol: UDP. Function: Tracks resources usage of remote users. Use: VPNs, networking. Security: Ensure data integrity and confidentiality. |
-| Port 3268 - Global Catalog Service | Protocol: TCP. Function: Directory service for AD domains. Use: Microsoft AD. Security: Ensure proper configurations for AD environment. |
-| Port 3269 - Secure Global Catalog Service | Protocol: TCP. Function: Directory service for AD domains over SSL. Use: Microsoft AD. Security: Encrypted; ensure valid certificates. |
-| Port 3389 - RDP/MS-WBT-server | Protocol: TCP/UDP. Function: Remote desktop access. Use: Remote system management. Security: High-risk; enable Network Level Authentication and restrict access. |
-| Port 5060 - SIP (Non-encrypted) | Protocol: TCP/UDP. Function: Initiates/modifies VoIP calls. Use: VoIP services. Security: Unencrypted; risks of eavesdropping. |
-| Port 5061 - SIP over TLS (Encrypted) | Protocol: TCP/UDP. Function: Secure VoIP call initiation. Use: Secure VoIP services. Security: Encrypted; preferred over non-encrypted SIP. |
-| Port 5190 - AOL | Protocol: TCP. Function: Online services and instant messaging. Use: Communication. Security: Ensure latest software versions; avoid untrusted content. |
-| Port 5631 - Symantec pcAnywhere (data) | Protocol: TCP. Function: Remote desktop data transfer. Use: Remote system access. Security: Ensure secure configurations and updates. |
-| Port 5632 - Symantec pcAnywhere (status) | Protocol: UDP. Function: Remote desktop status communication. Use: Remote system access. Security: Ensure secure configurations and updates. |
-| Port 5800 - VNC over HTTP | Protocol: TCP. Function: Web-based remote desktop access. Use: Remote system management. Security: Use strong passwords and consider tunneling over SSL. |
-| Port 5900 - VNC Standalone | Protocol: TCP. Function: Remote desktop access. Use: Remote system management. Security: Risky; use strong passwords and restrict access. |
-| Port 8080 - HTTP Proxy | Protocol: TCP. Function: Alternative port for web services. Use: Web applications, proxies. Security: Regularly monitor and restrict to known users. |
-
-</details>
 
 ---
 

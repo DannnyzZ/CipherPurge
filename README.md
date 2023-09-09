@@ -4,7 +4,7 @@ Modern data sanitization software in compliance with NIST SP 800-88 Guidelines
 
 <div align="center">
 <h1 align="center">
-<img src="https://github.com/DannnyzZ/OSFortify/blob/main/OSFortify_logo_wide.jpg" >
+<img src="https://github.com/DannnyzZ/CipherPurge/blob/main/CipherPurge_logo_wide.png?raw=true" >
 <br>
 </h1>
 <p align="center">

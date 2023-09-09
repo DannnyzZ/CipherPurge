@@ -172,7 +172,7 @@ OSFortify encompasses an extensive list of important ports, such as SSH (Port 22
 ## 🚀 Getting Started
 
 <div align="center">
-  <img src="https://github.com/DannnyzZ/OSFortify/assets/119814239/ae897cfc-2a04-4dc8-a691-1c109f861c46" alt="gui_screen">
+  <img src="https://github.com/DannnyzZ/CipherPurge/assets/119814239/92532790-82f3-4133-817f-2400675db24b" alt="gui_screen">
 </div>
 
 
@@ -190,7 +190,7 @@ Before you begin, ensure that you have the following prerequisites installed:
 
 >  ` Python library: cryptography `
 
->  ` Python library: sent2trash `
+>  ` Python library: send2trash `
 
 >  ` Internet connection `
 
@@ -209,7 +209,7 @@ Before you begin, ensure that you have the following prerequisites installed:
 
 2. Install dependencies
 ```sh
-pip install pip & pip install tk windows-curses
+pip install pip & pip install tkinter & pip install cryptography & pip install send2trash
 ```
 
 3. Check version of python and pip:
@@ -217,7 +217,7 @@ pip install pip & pip install tk windows-curses
 python --version && pip --version
 ```
 
-### 🎮 Using OSFortify
+### 🎮 Using CipherPurge
 
 1. Run Powershell as administrator.
 2. Download osfortify.py from this link:

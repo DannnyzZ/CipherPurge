@@ -23,7 +23,7 @@
 
 ![GitHub license](https://img.shields.io/github/license/eli64s/readme-ai?style&color=5D6D7E)
 ![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-328-25A9E0.svg?style=flat)
-![Code Size](https://img.shields.io/badge/Code%20Size-15%20KB-25A9E0.svg?style=flat)
+![Code Size](https://img.shields.io/badge/Code%20Size-24%20KB-25A9E0.svg?style=flat)
 </div>
 
 ---

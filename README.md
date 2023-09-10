@@ -196,17 +196,18 @@ python --version && pip --version
 
 ### 🎮 Using CipherPurge
 
-1. Run Powershell as administrator.
-2. Download cipherpurge.py from this link:
+
+1. Download cipherpurge.py from this link:
 ```sh
 https://github.com/DannnyzZ/CipherPurge/blob/main/cipherpurge.py
 ```
-4. Execute:
+2. Run commandline or powershell and execute:
 ```sh
 python cipherpurge.py
 ```
-3. WARNING! Make sure You provide the correct location of CipherPurge.
-4. Example of use:
+WARNING! Make sure You provide the correct location of CipherPurge.
+
+Example of use:
 ```sh
 python C:\Users\Danny\Desktop\cipherpurge.py
 ```
@@ -239,9 +240,10 @@ python C:\Users\Danny\Desktop\cipherpurge.py
 
 > - [ ] ` Incoming feature 1: New feature: sanitization of whole drives (internal or external memory)`
 > - [ ] ` Incoming feature 2: New feature: drag and drop`
-> - [ ] ` Incoming feature 3: Support for more file extensions.`
+> - [X] ` Incoming feature 3: Support for more file extensions.`
 > - [ ] ` Incoming feature 4: Support for whole folders not only choosen objects.`
 > - [ ] ` Incoming feature 5: Meter on list of objects choosen to sanitize.`
+> - [ ] ` Incoming feature 6: Full launch from .exe file (portable version).`
 > - [ ] ` Incoming improvement: Better, more user friendly GUI.`
 
 

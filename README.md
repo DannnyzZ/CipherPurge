@@ -65,7 +65,6 @@ In today's landscape of ever-evolving cyber threats and data breaches, ensuring 
 CipherPurge incorporates the principles of **"Defense in Depth**," a cybersecurity strategy that emphasizes multiple layers of protection. This approach ensures that even if one layer is compromised, others remain intact to thwart potential threats. 
 
 By offering military-grade encryption, data randomization, and secure file disposal in a user-friendly interface, CipherPurge empowers individuals and organizations to take control of their data security. 
-<span style="color:red">Checking</span>
 
 
 ---

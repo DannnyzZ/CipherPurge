@@ -199,7 +199,7 @@ python --version && pip --version
 1. Run Powershell as administrator.
 2. Download cipherpurge.py from this link:
 ```sh
-https://github.com/DannnyzZ/OSFortify/blob/main/osfortify
+https://github.com/DannnyzZ/CipherPurge/blob/main/cipherpurge.py
 ```
 4. Execute:
 ```sh

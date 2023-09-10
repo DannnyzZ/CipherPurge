@@ -197,18 +197,18 @@ python --version && pip --version
 ### 🎮 Using CipherPurge
 
 1. Run Powershell as administrator.
-2. Download osfortify.py from this link:
+2. Download cipherpurge.py from this link:
 ```sh
 https://github.com/DannnyzZ/OSFortify/blob/main/osfortify
 ```
 4. Execute:
 ```sh
-python osfortify.py
+python cipherpurge.py
 ```
-3. WARNING! Make sure You provide the correct location of OSFortify.
+3. WARNING! Make sure You provide the correct location of CipherPurge.
 4. Example of use:
 ```sh
-python C:\Users\Danny\Desktop\osfortify.py
+python C:\Users\Danny\Desktop\cipherpurge.py
 ```
 
 ---

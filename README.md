@@ -186,7 +186,7 @@ Before you begin, ensure that you have the following prerequisites installed:
 
 2. Install dependencies
 ```sh
-pip install pip & pip install tkinter & pip install cryptography & pip install send2trash
+pip install pip & pip install tkinter & pip install cryptography & pip install send2trash & pip install tk
 ```
 
 3. Check version of python and pip:

@@ -149,7 +149,7 @@ This list represents only part of supported formats and extensions. Software doe
 ## 🚀 Getting Started
 
 <div align="center">
-  <img src="https://github.com/DannnyzZ/CipherPurge/assets/119814239/92532790-82f3-4133-817f-2400675db24b" alt="gui_screen">
+  <img src="https://github.com/DannnyzZ/CipherPurge/blob/eb5cb2337cfffd306f7165bd448d1440405a06a7/CipherPurge_GUI.PNG" alt="gui_screen">
 </div>
 
 

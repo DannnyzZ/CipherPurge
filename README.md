@@ -274,7 +274,7 @@ The project maintainers will review your changes and provide feedback or merge t
 
 ## 📄 License
 
-This project is licensed under the `ℹ️  MIT` License. 
+Non-Commercial Use.
 
 ---
 

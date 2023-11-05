@@ -272,7 +272,7 @@ The project maintainers will review your changes and provide feedback or merge t
 
 ## 📄 License
 
-Non-Commercial Use.
+Non-Commercial Use ONLY.
 
 ---
 

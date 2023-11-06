@@ -32,7 +32,7 @@
 - [📍 Overview](#-overview)
 - [⚙️ Features](#️-features)
 - [🧩 Supported formats](#-supported-formats)
-- [🔑 Generating RSA Keys](#-generating-rsa-keys)
+- [🚀 Getting Started](#-getting-started)
   - [✔️ Prerequisites](#️-prerequisites)
   - [💻 Installation](#-installation)
   - [🎮 Using CipherPurge](#-using-CipherPurge)
@@ -144,25 +144,11 @@ This list represents only part of supported formats and extensions. Software doe
 
 ---
 
-## 🔑 Generating RSA Keys
+## 🚀 Getting Started
 
-1. Open the Command Prompt:
-- Press the Windows key.
-Type "cmd" or "Command Prompt" and press Enter.
-
-> In the Command Prompt, use the ssh-keygen command to generate an RSA key pair. Specify the -t option to indicate the key type (RSA) and the -b option to set the desired key length (e.g., 4096 bits). You can also specify the output file using the -f option:
-
-```sh
-ssh-keygen -t rsa -b 4096 -f "C:\Users\Root\RSA_KEY"
-```
-Replace "Root" with your actual Windows username. This command will generate an RSA key pair with a 4096-bit key length and save it in your user's .ssh directory with the name "RSA_KEY"
-
-You will be prompted to enter a passphrase for added security. You can choose to set a passphrase or leave it empty for no passphrase.
-
-Once the key pair is generated, you will find two files in your user's .ssh directory:
-
-id_rsa (the private key)
-id_rsa.pub (the public key)
+<div align="center">
+  <img src="https://github.com/DannnyzZ/CipherPurge/blob/eb5cb2337cfffd306f7165bd448d1440405a06a7/CipherPurge_GUI.PNG" alt="gui_screen">
+</div>
 
 
 ### ✔️ Prerequisites

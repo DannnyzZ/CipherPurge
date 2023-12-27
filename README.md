@@ -286,5 +286,3 @@ Non-Commercial Use ONLY.
 
   `ℹ️  Logo.com https://logo.com`
   
-
----
